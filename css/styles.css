@@ -9,6 +9,10 @@ body {
   background-color: #f4f4f4;
 }
 
+.container {
+  padding: 0 1em;
+}
+
 .text-color-white {
   color: #ffffff;
 }
@@ -74,3 +78,15 @@ body {
   color: #5A537B;
 }
 
+/* Media Queries */
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .length,
+  .volume,
+  .mass {
+    width: 100%;
+  }
+}
