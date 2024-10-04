@@ -10,19 +10,18 @@
   <title>Unit Converter</title>
 </head>
 <body>
-  <div class="container">
-    <header class="header text-color-white">
+  <header class="header text-color-white">
     <h1 class="main-title">Metric/Imperial Unit Conversion</h1>
     <div class="input-container">
       <input class="text-color-white" type="number" name="number" id="number">
     </div>
     <button id="btn-convert">Convert</button>
-    </header>
-
+  </header>
+  <div class="container">
     <section class="unit-conversion">
       <div class="length">
         <h2 class="title">Length (Meter/Feet)</h2>
-        <p id="length-conversion-output">20 meters = 65.616 feet | 20 feet = 5.096 meters</p>
+        <p id="length-conversion-output"></p>
       </div>
 
       <div class="volume">
@@ -35,8 +34,8 @@
         <p id="mass-conversion-output"></p>
       </div>
     </section>
-
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
