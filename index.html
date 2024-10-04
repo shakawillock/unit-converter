@@ -3,10 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Unit Converter</title>
 </head>
 <body>
-  
+  <div class="container">
+    <header class="header text-color-white">
+    <h1 class="main-title">Metric/Imperial Unit Conversion</h1>
+    <div class="input-container">
+      <input class="text-color-white" type="number" name="number" id="number">
+    </div>
+    <button id="btn-convert">Convert</button>
+    </header>
+
+    <section class="unit-conversion">
+      <div class="length">
+        <h2 class="title">Length (Meter/Feet)</h2>
+        <p id="length-conversion-output">20 meters = 65.616 feet | 20 feet = 5.096 meters</p>
+      </div>
+
+      <div class="volume">
+        <h2 class="title">Volume (Liters/Gallons)</h2>
+        <p id="volume-conversion-output"></p>
+      </div>
+
+      <div class="mass">
+        <h2 class="title">Mass (Kilograms / Pounds)</h2>
+        <p id="mass-conversion-output"></p>
+      </div>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
